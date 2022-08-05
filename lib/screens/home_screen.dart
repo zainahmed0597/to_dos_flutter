@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:calendar_timeline/calendar_timeline.dart';
 import '../widgets/icon_button.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -64,6 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(
                 height: 100,
               ),
+              // Calender timeline
             ],
           ),
         ),
