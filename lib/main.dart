@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:to_dos/widgets/calandert_timeline.dart';
 
 import 'screens/home_screen.dart';
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CalanderTimeLine(),
+      home: const MyHomePage(),
     );
   }
 }
