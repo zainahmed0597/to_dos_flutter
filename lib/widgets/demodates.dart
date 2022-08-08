@@ -6,7 +6,7 @@ demoDates(String day, String date, bool isSelected) {
       ? Container(
           margin: const EdgeInsets.only(right: 25),
           padding: const EdgeInsets.all(7),
-          width: 65,
+          width: 60,
           decoration: BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.circular(12),
@@ -41,7 +41,7 @@ demoDates(String day, String date, bool isSelected) {
       : Container(
           margin: const EdgeInsets.only(right: 25),
           padding: const EdgeInsets.all(7),
-          width: 65,
+          width: 60,
           decoration: BoxDecoration(
             color: Colors.transparent,
             border: Border.all(color: Colors.black12),
