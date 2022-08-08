@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 demoDates(String day, String date, bool isSelected) {
   return isSelected
       ? Container(
-          margin: const EdgeInsets.only(right: 23),
+          margin: const EdgeInsets.only(right: 25),
           padding: const EdgeInsets.all(7),
-          width: 55,
+          width: 65,
           decoration: BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.circular(12),
@@ -39,9 +39,9 @@ demoDates(String day, String date, bool isSelected) {
           ),
         )
       : Container(
-          margin: const EdgeInsets.only(right: 23),
+          margin: const EdgeInsets.only(right: 25),
           padding: const EdgeInsets.all(7),
-          width: 55,
+          width: 65,
           decoration: BoxDecoration(
             color: Colors.transparent,
             border: Border.all(color: Colors.black12),

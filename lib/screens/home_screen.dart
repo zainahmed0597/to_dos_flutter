@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../widgets/active_activity.dart';
 import '../widgets/demodates.dart';
 import '../widgets/icon_button.dart';
+import '../widgets/toggle_button.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -35,8 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       const Spacer(),
                       Text(
                         'Saber',
-                        style: GoogleFonts.nunitoSans(
-                            fontSize: 25, fontWeight: FontWeight.w900),
+                        style: GoogleFonts.poppins(
+                            fontSize: 25, fontWeight: FontWeight.w600),
                       ),
                       const SizedBox(
                         width: 12.0,
@@ -72,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 25),
+              margin: const EdgeInsets.only(left: 25),
               height: 85,
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -88,8 +90,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const SizedBox(
-              height: 25,
+              height: 35,
             ),
+            const ToggleButton(),
+            const SizedBox(
+              height: 35,
+            ),
+            const ActiveActivity(),
           ],
         ),
       ),
