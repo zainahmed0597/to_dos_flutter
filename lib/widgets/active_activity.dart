@@ -65,12 +65,13 @@ class _ActiveActivityState extends State<ActiveActivity> {
                 height: 10,
               ),
               Container(
-                // decoration: const BoxDecoration(
-                //   color: Colors.white,
-                // ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  color: Colors.white,
+                ),
                 height: 30,
-                width: 135,
-                color: Colors.white,
+                width: 140,
+                // color: Colors.white,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

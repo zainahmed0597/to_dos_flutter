@@ -97,6 +97,31 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 35,
             ),
             const ActiveActivity(),
+            const SizedBox(
+              height: 35,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.grey[200],
+                ),
+                height: 55,
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.add),
+                    Text(
+                      'Add more',
+                      style: GoogleFonts.poppins(
+                          fontSize: 14, fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

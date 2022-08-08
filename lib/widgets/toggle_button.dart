@@ -16,7 +16,7 @@ class _ToggleButtonState extends State<ToggleButton> {
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: ToggleSwitch(
         minHeight: 44.0,
-        minWidth: 176.0,
+        minWidth: 164,
         initialLabelIndex: 1,
         cornerRadius: 12.0,
         borderWidth: 4,
@@ -24,17 +24,18 @@ class _ToggleButtonState extends State<ToggleButton> {
         activeFgColor: Colors.black,
         inactiveBgColor: Colors.grey,
         inactiveFgColor: Colors.grey[700],
-        customTextStyles:  [
+        customTextStyles: [
           GoogleFonts.poppins(
-              fontSize: 20,
-              color: Colors.black87,
-              fontWeight: FontWeight.w500),
+              fontSize: 20, color: Colors.black87, fontWeight: FontWeight.w500),
         ],
         totalSwitches: 2,
         fontSize: 20,
-        labels: const ['To-dos', 'Completed'] ,
+        labels: const ['To-dos', 'Completed'],
         // icons: [FontAwesomeIcons.mars, FontAwesomeIcons.venus],
-        activeBgColors: const [[Colors.white],[Colors.white]],
+        activeBgColors: const [
+          [Colors.white],
+          [Colors.white]
+        ],
       ),
     );
   }
