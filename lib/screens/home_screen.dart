@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       IconButtonWidget(
                         icon: Icons.menu,
                         iconcolor: Colors.black,
-                        color: Colors.grey[300],
+                        color: Colors.grey[200],
                       ),
                       const Spacer(),
                       Text(

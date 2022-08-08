@@ -20,16 +20,18 @@ class _ToggleButtonState extends State<ToggleButton> {
         initialLabelIndex: 1,
         cornerRadius: 12.0,
         borderWidth: 4,
-        borderColor: const [Colors.grey],
+        radiusStyle: true,
+
+        borderColor: const [Color(0xFFEEEEEE)],
         activeFgColor: Colors.black,
-        inactiveBgColor: Colors.grey,
-        inactiveFgColor: Colors.grey[700],
-        customTextStyles: [
-          GoogleFonts.poppins(
-              fontSize: 20, color: Colors.black87, fontWeight: FontWeight.w500),
-        ],
+        inactiveBgColor: Colors.grey[200],
+        inactiveFgColor: Colors.grey[400],
+        // customTextStyles: const [
+        //   TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+        //   null
+        // ],
         totalSwitches: 2,
-        fontSize: 20,
+        fontSize: 18,
         labels: const ['To-dos', 'Completed'],
         // icons: [FontAwesomeIcons.mars, FontAwesomeIcons.venus],
         activeBgColors: const [
