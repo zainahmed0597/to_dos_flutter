@@ -49,10 +49,15 @@ class _NewHabitState extends State<NewHabit> {
                       // Exercises heading
                       Row(
                         children: [
-                          IconButtonWidget(
-                            icon: Icons.close,
-                            iconcolor: Colors.red,
-                            color: Colors.pink[050],
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pop(context);
+                            },
+                            child: IconButtonWidget(
+                              icon: Icons.close,
+                              iconcolor: Colors.red,
+                              color: Colors.pink[050],
+                            ),
                           ),
                           const SizedBox(
                             width: 52,
