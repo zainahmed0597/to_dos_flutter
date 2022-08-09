@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:to_dos/screens/home_screen.dart';
 
-import 'widgets/toggle_button.dart';
-
 void main() {
   runApp(const MyApp());
 }
