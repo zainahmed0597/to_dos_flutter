@@ -73,9 +73,7 @@ class NavBarState extends State<NavBar> {
                 child: Icon(
                   listOfIcons[index],
                   size: screenWidth * .076,
-                  color: index == currentIndex
-                      ? Colors.blueAccent
-                      : Colors.black26,
+                  color: index == currentIndex ? Colors.black : Colors.black,
                 ),
               ),
             ],
@@ -87,8 +85,8 @@ class NavBarState extends State<NavBar> {
 
   List<IconData> listOfIcons = [
     Iconsax.home,
-    Iconsax.chart,
-    Iconsax.menu,
+    Iconsax.graph,
+    Iconsax.menu4,
     Iconsax.setting,
   ];
 }

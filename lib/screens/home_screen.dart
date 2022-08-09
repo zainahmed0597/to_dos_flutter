@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:to_dos/screens/new_habit.dart';
+
 import '../widgets/active_activity.dart';
 import '../widgets/demodates.dart';
 import '../widgets/icon_button.dart';
@@ -101,25 +103,33 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 35,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.grey[200],
-                ),
-                height: 55,
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.add),
-                    Text(
-                      'Add more',
-                      style: GoogleFonts.poppins(
-                          fontSize: 14, fontWeight: FontWeight.w400),
-                    ),
-                  ],
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewHabit()),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.grey[200],
+                  ),
+                  height: 55,
+                  width: double.infinity,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.add),
+                      Text(
+                        'Add more',
+                        style: GoogleFonts.poppins(
+                            fontSize: 14, fontWeight: FontWeight.w400),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
